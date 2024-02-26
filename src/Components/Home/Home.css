@@ -20,3 +20,15 @@ body{
  .heading h2{
     margin: 0;
 } 
+
+.Content{
+    display: block;
+    border:2px solid black;
+    margin: 1em;
+
+}
+.data{
+    width: 100vh;
+    font-size: 2em;
+    margin-left: 2em;
+}

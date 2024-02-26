@@ -58,3 +58,15 @@ body{
 .link{
     text-decoration: none;
 }
+.profile-pic{
+    border:0;
+    box-shadow: none;
+    position:absolute;
+    left:85%;
+}
+
+.profile-pic img{
+    width: 45px;
+    height: 40px;
+    margin-top: 0.3rem;
+}
