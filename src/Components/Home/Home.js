@@ -18,24 +18,21 @@ const Home = () => {
       try {
         const response = await axios.get('http://127.0.0.1:5000/sensor-data');
         setSensorData(response.data.result);
-        await axios.post('http://localhost:3000/api/sensor-data', response.data.result);
+        console.log(sensorData)
         if (response.data.result.result === 'Level:1 - MODERATE ') {
           setShowAlert(true);
-          console.log(showAlert);
-          setAlertMessage('SMS alert sent to number: 6302667331');
-          console.log(alertMessage);
-          
+          setAlertMessage('SMS alert sent to number: 6302667331');          
         } 
         else if(response.data.result.result === 'Level:2 - IMMEDIATE ACTION REQUIRED') {
           setShowAlert(true);
-          console.log(showAlert);
           setAlertMessage('SMS alert sent with Location to number: 6302667331');
-          console.log(alertMessage);
         }
         else {
           setShowAlert(false);
           setAlertMessage('');
         }
+        await axios.post('https://healthguard-backend.onrender.com/api/sensor-data', response.data.result);
+
       } catch (error) {
         console.error('Error fetching sensor data:', error);
       }

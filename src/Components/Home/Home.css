@@ -42,12 +42,11 @@ body{
     color: #ffffff; /* Text color */
     padding: 10px;
     border-radius: 5px;
-    height: 2rem;
+    height: 2.8rem;
 }
 
 .alert-messsage{
     font-size: larger;
-    margin: 0.25rem;
 }
 .home{
     position: relative;
