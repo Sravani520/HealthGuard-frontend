@@ -32,7 +32,7 @@ const Home = () => {
           setShowAlert(false);
           setAlertMessage('');
         }
-        await axios.post('https://healthguard-backend.onrender.com/api/sensor-data', response.data.result);
+        // await axios.post('https://healthguard-backend.onrender.com/api/sensor-data', response.data.result);
 
       } catch (error) {
         console.error('Error fetching sensor data:', error);
