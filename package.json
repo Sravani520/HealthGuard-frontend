@@ -34,6 +34,7 @@
     "react-router-dom": "^6.12.1",
     "react-scripts": "5.0.1",
     "server": "^1.0.38",
+    "socket.io-client": "^4.7.4",
     "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },

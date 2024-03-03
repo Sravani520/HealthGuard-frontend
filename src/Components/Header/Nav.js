@@ -13,7 +13,7 @@ export default function Header() {
 
         <div className="Header_nav">
             <div className="HeaderOption">
-                    <button className="profile-pic" onClick={navigate('/Profile')}><img src={profile} alt="profile-pic"></img></button>
+                    <button className="profile-pic"><img src={profile} alt="profile-pic"></img></button>
                     <button className="LogOut button-logout" onClick={()=>{
                         localStorage.removeItem('token')
                         navigate('/')
