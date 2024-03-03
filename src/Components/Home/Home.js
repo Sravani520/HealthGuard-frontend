@@ -17,7 +17,8 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get('http://127.0.0.1:5000/sensor-data');
-        setSensorData(response.data.result);
+        setSensorData(prevData => response.data.result);
+
         console.log(sensorData)
         if (response.data.result.result === 'Level:1 - MODERATE ') {
           setShowAlert(true);
