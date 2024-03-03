@@ -45,7 +45,7 @@ const Home = () => {
     }, 20000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [sensorData]);
 
 
   return (

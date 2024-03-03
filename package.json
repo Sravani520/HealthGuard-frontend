@@ -64,6 +64,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.5",
     "css-minimizer-webpack-plugin": "^6.0.0",
     "eslint-plugin-react": "^7.32.2",
     "fork-ts-checker-webpack-plugin": "^9.0.2"
