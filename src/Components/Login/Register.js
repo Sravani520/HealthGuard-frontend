@@ -22,7 +22,7 @@ export default function Register() {
       console.log(e)
       // axios.post(`http://localhost:3000/api/auth/Register`, register)
       axios.post(`https://healthguard-backend.onrender.com/api/auth/Register`, register)
-      .then(res => { alert(res.data); 
+      .then(res => {  
         navigate('/') })
       .catch(err => alert(err.response.data));
     }
