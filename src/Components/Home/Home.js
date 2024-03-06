@@ -17,9 +17,8 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get('http://127.0.0.1:5000/sensor-data');
+        // const response = await axios.get('/sensor-data');
         setSensorData(prevData => response.data.result);
-
-        console.log(sensorData)
         if (response.data.result.result === 'Level:1 - MODERATE ') {
           setShowAlert(true);
           setAlertMessage('SMS alert sent to number: 6302667331');          
